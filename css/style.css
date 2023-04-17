@@ -241,6 +241,12 @@ font-family: "Merriweather";
   transform: rotate(-26deg);
 }
 
+@media screen and (min-width:320px) #places-body {
+    background-color: lightblue;
+}
+
+
+
 #map-header {
   font-family: "Leelawadee";
 }
