@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+
+#main-nav {
+  background-color: lightpink;
+  overflow: hidden;
+}
+
+#nav-contain {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+  display: block;
+  font-family: "Leelawadee";
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: mediumvioletred;
+  text-decoration: none;
+}
+
+#main-nav ul li a:hover {
+  background-color: #ff9eb8;
+}
+
+h1 {
+  background-color: #451926 ;
+  font-family: 'Rubik Puddles', cursive; 
+  color: lightpink;
+  font-size: 65px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Leelawadee";
+  text-align: center;
+}
+
+p {
+font-family: "Merriweather";
+}
+
+li {
+font-family: "Merriweather";
+}
+
+#resume-body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/007/001/429/original/pink-watercolor-background-abstract-texture-with-color-splash-design-free-photo.jpg");
+}
+
+#contact-info {
+  text-align: center;
+  border-style: inset;
+  border-color: mediumvioletred;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 10px;
+  background: rgba(199, 21, 133,0.4);
+  transition: all .2s ease-in-out; 
+}
+
+#contact-info:hover { 
+  transform: scale(1.1); 
+}
+
+#edu-info {
+  float: left;
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border: ridge rgba(255, 158, 184, .6); 
+}
+
+
+#experience-info {
+  float: right;
+  padding: 15px;
+  padding-bottom: 2px;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border: ridge rgba(255, 158, 184, .6);
+}
+
+
+#skills-info {
+  left: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 640px;
+  margin-bottom: 30px;
+  padding: 15px;
+  border: ridge rgba(255, 158, 184, .6);
+}
+
+
+.h3-underline {
+  text-decoration: underline mediumvioletred 5px;
+}
+
+#places-body {
+  background-image: url("https://img.freepik.com/free-vector/watercolor-sugar-cotton-clouds-background_23-2149219078.jpg");
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+#mx-section {
+  text-align: center;
+  border-style: dotted;
+  border-color: mediumvioletred;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: rgba(199, 21, 133,0.2);
+}
+
+#ca-section {
+  text-align: center;
+  border-style: dotted;
+  border-color: mediumvioletred;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: rgba(255, 182, 193,0.4);
+}
+
+.mxca-img {
+  width: 250px;
+  height: 450px;
+  padding-left: 0px;
+  transition: all .2s ease-in-out;
+}
+
+.mxca-img:hover { 
+  transform: scale(1.1); 
+}
+
+#eu-section {
+  text-align: center;
+  border-style: dotted;
+  border-color: mediumvioletred;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: rgba(199, 21, 133,0.2);
+}
+
+.eu-img {
+  width: 250px;
+  height: 375px;
+  padding-left: 5px;
+  transition: all .2s ease-in-out;
+} 
+
+.eu-img:hover { 
+  transform: scale(1.1); 
+}
+
+#hobbies-body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/005/225/932/original/strawberry-and-hearts-on-pink-background-seamless-pattern-in-flat-style-vector.jpg");
+  background-size: 50%;
+}
+
+#music-section {
+  float: left;
+  width: 46%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+#soccer-section {
+  float: right;
+  width: 46%;
+  padding: 10px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+#coloring-section {
+  float: left;
+  padding: 20px;
+  margin:20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.music-imgs {
+  width: 175px;
+  height: 175px;
+  padding-left: 23px;
+  transition: transform .7s ease-in-out;
+}
+
+.music-imgs:hover {
+  transform: rotate(26deg);
+}
+
+.soccer-imgs {
+  width: 450px;
+  height: 300px;
+  padding-left: 90px;
+  transition: transform .7s ease-in-out;
+}
+
+.soccer-imgs:hover {
+  transform: rotate(-26deg);
+}
