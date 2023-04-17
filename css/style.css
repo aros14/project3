@@ -241,8 +241,22 @@ font-family: "Merriweather";
   transform: rotate(-26deg);
 }
 
-@media screen and (min-width:320px) #places-body {
-    background-color: lightblue;
+@media screen and (max-width:320px){ 
+  h1 {
+    font-size: 32px;
+  }
+
+  #places-body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/905/564/original/light-pink-background-free-photo.jpg");
+  }
+
+  #mx-section, #ca-section, #eu-section {
+    border-style: double;
+    padding: 20px;
+    font-size: 15px;
+  }
+  
+
 }
 
 
