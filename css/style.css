@@ -240,3 +240,10 @@ font-family: "Merriweather";
 .soccer-imgs:hover {
   transform: rotate(-26deg);
 }
+
+#map-header {
+  font-family: "Leelawadee";
+}
+
+#map-body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/005/009/431/original/bright-pink-fog-or-smoke-on-dark-space-background-free-photo.jpg");
