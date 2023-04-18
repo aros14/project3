@@ -81,6 +81,37 @@ async function initMap() {
     map,
     title: "John Glenn Columbus International Airport",
   });
+
+  new google.maps.Marker({
+    position: { lat: 38.9038, lng: -77.0059 },
+    map,
+    title: "North DC",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 29.9466, lng: -90.0945 },
+    map,
+    title: "Hoffman Triangle Neighborhood",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 38.5676, lng: -77.3280 },
+    map,
+    title: "Dumfries",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 39.29442, lng: -76.69179 },
+    map,
+    title: "Shopping center in front of Edmondson Westside High School",
+  });  
+  
+  new google.maps.Marker({
+    position: { lat: 37.7733, lng: -113.0244 },
+    map,
+    title: "Enoch",
+  });
+
 }
 
 initMap();
