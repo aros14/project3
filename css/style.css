@@ -299,7 +299,7 @@ font-family: "Merriweather";
  * that contains the map. 
  */
 #map {
-  height: 100%;
+  height: 50%;
 }
 
 /* 
@@ -307,9 +307,9 @@ font-family: "Merriweather";
  */
 html,
 body {
-  height: 700%;
-  margin: 0;
-  padding: 0;
+  height: 125%;
+  margin: 15px;
+  padding: 15px;
 }
 
 
