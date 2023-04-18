@@ -5,8 +5,7 @@
   <title>Project 2</title
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script type="module" src="js/script.js"></script>
+  <script async src="js/script.js"></script>
 </head>
 <body id = "map-body">
   <header>
@@ -22,31 +21,39 @@
     </nav>
     <h1 id="map-header">Mass Shootings 2023:</h1>
   </header>
-  <div id="map"></div>
 
-    <!-- prettier-ignore -->
-    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
   <!-- Slideshow container -->
   <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="pics/parkland.JPEG" style="width:100%">
-      <div class="text">Caption Text</div>
+      <div class="numbertext">1 / 5</div>
+      <img src="pics/dadeville.JPG" alt="Dadeville vigil" style="width:100%">
+      <div class="text">Vigil for Dadeville victims</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="pics/sandy.JPEG" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="numbertext">2 / 5</div>
+    <img src="pics/louisville.JPG" alt="Louisville victims" style="width:100%">
+    <div class="text">Louisville bank shooting victims</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="pics/vegas.JPEG" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="numbertext">3 / 5</div>
+    <img src="pics/michigan.JPG" alt="Michigan State victims" style="width:100%">
+    <div class="text">Michigan State shooting victims</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="pics/mpark.JPG" alt="Monterey Park victims" style="width:100%">
+    <div class="text">Monterey Park shooting victims</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="pics/nashville.JPG" alt="Nashville school victims" style="width:100%">
+    <div class="text">Nashville elementary school shooting victims</div>
   </div>
 
   <!-- Next and previous buttons -->
