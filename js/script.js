@@ -112,6 +112,47 @@ async function initMap() {
     title: "Enoch",
   });
 
+  new google.maps.Marker({
+    position: { lat: 25.9420, lng: -80.2456 },
+    map,
+    title: "Miami Gardens music video",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 30.5543, lng: -91.0369 },
+    map,
+    title: "Central City",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 32.9621, lng: -96.7864 },
+    map,
+    title: "North Dallas",
+  });
+  
+  new google.maps.Marker({
+    position: { lat: 37.7636, lng: -122.4174 },
+    map,
+    title: "Mission District",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 35.9557, lng: -80.0053 },
+    map,
+    title: "Highpoint",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 42.2703, lng: -86.0527 },
+    map,
+    title: "Lee Township",
+  });
+
+    new google.maps.Marker({
+    position: { lat: 34.76523, lng: -86.48801 },
+    map,
+    title: "Huntsville strip mall",
+  });
 }
 
 initMap();
