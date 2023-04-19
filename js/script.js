@@ -138,12 +138,14 @@ async function initMap() {
     title: "Ocala",
   });
 
-  new google.maps.Marker({
+  clintonM = new google.maps.Marker({
     position: { lat: 38.4549, lng: -76.5344 },
     map,
     title: "Clinton",
-    animation: google.maps.Animation.DROP,
+    animation: google.maps.Animation.BOUNCE,
   });
+
+  clintonM.addListener("load", toggleBounce);
 
   new google.maps.Marker({
     position: { lat: 35.5919, lng: -78.5426 },
@@ -151,11 +153,14 @@ async function initMap() {
     title: "Durham ",
   });
 
-  new google.maps.Marker({
+  washingtonM = new google.maps.Marker({
     position: { lat: 41.79225, lng: -87.61719 },
     map,
     title: "Washington Park in Chicago",
+    animation: google.maps.Animation.BOUNCE,
   });
+
+  washingtonM.addListener("load", toggleBounce);
 
   new google.maps.Marker({
     position: { lat: 40.6023, lng: -75.4714 },
@@ -163,11 +168,14 @@ async function initMap() {
     title: "John Glenn Columbus International Airport",
   });
 
-  new google.maps.Marker({
+  northDCM = new google.maps.Marker({
     position: { lat: 38.9038, lng: -77.0059 },
     map,
     title: "North DC",
+    animation: google.maps.Animation.BOUNCE,
   });
+
+  northDCM.addListener("load", toggleBounce);
 
   new google.maps.Marker({
     position: { lat: 29.9466, lng: -90.0945 },
@@ -175,23 +183,32 @@ async function initMap() {
     title: "Hoffman Triangle Neighborhood",
   });
 
-  new google.maps.Marker({
+  dumfriesM = new google.maps.Marker({
     position: { lat: 38.5676, lng: -77.3280 },
     map,
     title: "Dumfries",
+    animation: google.maps.Animation.BOUNCE,
   });
 
-  new google.maps.Marker({
+  dumfriesM.addListener("load", toggleBounce);
+
+  baltM = new google.maps.Marker({
     position: { lat: 39.29442, lng: -76.69179 },
     map,
     title: "Shopping center in front of Edmondson Westside High School",
-  });  
+    animation: google.maps.Animation.BOUNCE,
+  });
+
+  baltM.addListener("load", toggleBounce);
   
-  new google.maps.Marker({
+  enochM = new google.maps.Marker({
     position: { lat: 37.7733, lng: -113.0244 },
     map,
     title: "Enoch",
+    animation: google.maps.Animation.BOUNCE,
   });
+
+  enochM.addListener("load", toggleBounce);
 
   new google.maps.Marker({
     position: { lat: 25.9420, lng: -80.2456 },
@@ -217,11 +234,14 @@ async function initMap() {
     title: "Mission District",
   });
 
-  new google.maps.Marker({
+  highpointM = new google.maps.Marker({
     position: { lat: 35.9557, lng: -80.0053 },
     map,
     title: "Highpoint",
+    animation: google.maps.Animation.BOUNCE,
   });
+
+  highpointM.addListener("load", toggleBounce);
 
   new google.maps.Marker({
     position: { lat: 42.2703, lng: -86.0527 },
@@ -289,11 +309,14 @@ async function initMap() {
     title: "Northern Houston",
   });
 
-  new google.maps.Marker({
+  goshenM = new google.maps.Marker({
     position: { lat: 36.3490, lng: -119.4186 },
     map,
     title: "Goshen",
+    animation: google.maps.Animation.BOUNCE,
   });
+
+  goshenM.addListener("load", toggleBounce);
 
   new google.maps.Marker({
     position: { lat: 27.4467, lng: -80.3256 },
@@ -367,11 +390,14 @@ async function initMap() {
     title: "Half Moon Bay",
   });
 
-  new google.maps.Marker({
+  oaklandM = new google.maps.Marker({
     position: { lat: 37.8044, lng: -122.2712 },
     map,
     title: "Oakland",
+    animation: google.maps.Animation.BOUNCE,
   });
+
+  oaklandM.addListener("load", toggleBounce);
 
   new google.maps.Marker({
     position: { lat: 37.8152, lng: -79.1831 },
@@ -427,11 +453,14 @@ async function initMap() {
     title: "Greensboro",
   });
 
-  new google.maps.Marker({
+  dallasM = new google.maps.Marker({
     position: { lat: 32.7767, lng: -96.7970 },
     map,
     title: "Dallas",
+    animation: google.maps.Animation.BOUNCE,
   });
+
+  dallasM.addListener("load", toggleBounce);
 
   new google.maps.Marker({
     position: { lat: 28.0395, lng: -81.9498 },
@@ -444,6 +473,7 @@ async function initMap() {
     map,
     title: "Durham",
   });
+
 }
 
 function toggleBounce() {
@@ -453,7 +483,5 @@ function toggleBounce() {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
 }
-
-marker.addListener("load", toggleBounce);
 
 initMap();
