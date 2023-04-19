@@ -153,6 +153,30 @@ async function initMap() {
     map,
     title: "Huntsville strip mall",
   });
+
+  new google.maps.Marker({
+    position: { lat: 44.986656, lng: -93.258133 },
+    map,
+    title: "Hennepin Avenue",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 31.83200, lng: -84.16423 },
+    map,
+    title: "Driskell Park",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 39.7522, lng: -104.9989 },
+    map,
+    title: "Mayfair",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 44.9489, lng: -93.2389 },
+    map,
+    title: "Lake Street/Midtown station",
+  });
 }
 
 initMap();
