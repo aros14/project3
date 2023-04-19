@@ -225,6 +225,48 @@ async function initMap() {
     map,
     title: "Sanford",
   });
+
+  new google.maps.Marker({
+    position: { lat: 29.8402, lng: -95.4149 },
+    map,
+    title: "Northen Houston",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 37.4138, lng: -79.1422 },
+    map,
+    title: "Lynchburg",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 34.0625, lng: -118.1278 },
+    map,
+    title: "Monterey Park - Lunar New Year celebration",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 30.4515, lng: -91.1871 },
+    map,
+    title: "Baton Rouge",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 33.8650, lng: -84.3371 },
+    map,
+    title: "Brookhaven",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 32.5252, lng: -93.7502 },
+    map,
+    title: "Shreveport",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 34.8173, lng: -90.3162 },
+    map,
+    title: "Tunica Resorts",
+  });
 }
 
 initMap();
