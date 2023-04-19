@@ -135,19 +135,20 @@ async function initMap() {
   new google.maps.Marker({
     position: { lat: 29.1116, lng: -82.0750 },
     map,
-    title: "Ocala, Florida",
+    title: "Ocala",
   });
 
   new google.maps.Marker({
     position: { lat: 38.4549, lng: -76.5344 },
     map,
-    title: "Clinton, Maryland",
+    title: "Clinton",
+    animation: google.maps.Animation.DROP,
   });
 
   new google.maps.Marker({
     position: { lat: 35.5919, lng: -78.5426 },
     map,
-    title: "Durham, North Carolina",
+    title: "Durham ",
   });
 
   new google.maps.Marker({
@@ -444,5 +445,15 @@ async function initMap() {
     title: "Durham",
   });
 }
+
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
+marker.addListener("load", toggleBounce);
 
 initMap();
