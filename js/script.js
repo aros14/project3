@@ -267,6 +267,72 @@ async function initMap() {
     map,
     title: "Tunica Resorts",
   });
+
+  new google.maps.Marker({
+    position: { lat: 37.7528, lng: -100.0171 },
+    map,
+    title: "Dodge City",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 41.7590, lng: -87.3700 },
+    map,
+    title: "South Shore Apts",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 37.4636, lng: -122.4286 },
+    map,
+    title: "Half Moon Bay",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 37.8044, lng: -122.2712 },
+    map,
+    title: "Oakland",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 37.8152, lng: -79.1831 },
+    map,
+    title: "Red Springs",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 40.7357, lng: -74.1724 },
+    map,
+    title: "Newark",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 40.0379, lng: -76.3055 },
+    map,
+    title: "Lancaster",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 34.1013, lng: -118.4163 },
+    map,
+    title: "Beverly Crest",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 40.0428, lng: -75.0766 },
+    map,
+    title: "Oxford Circle",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 30.2672, lng: -97.7431 },
+    map,
+    title: "Austin",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 33.4513, lng: -79.5609 },
+    map,
+    title: "Andrews",
+  });
 }
 
 initMap();
