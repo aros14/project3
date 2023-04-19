@@ -333,6 +333,36 @@ async function initMap() {
     map,
     title: "Andrews",
   });
+
+  new google.maps.Marker({
+    position: { lat: 40.0270, lng: -82.9335 },
+    map,
+    title: "NE Columbus",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 36.0726, lng: -79.7920 },
+    map,
+    title: "Greensboro",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 32.7767, lng: -96.7970 },
+    map,
+    title: "Dallas",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 28.0395, lng: -81.9498 },
+    map,
+    title: "Lakeland",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 35.9940, lng: -78.8986 },
+    map,
+    title: "Durham",
+  });
 }
 
 initMap();
