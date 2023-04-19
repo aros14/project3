@@ -31,9 +31,8 @@ function showSlides(n) {
 // map
 let map;
 
-function initMap() {
+function init() {
 
-  //alert('it works');
   var el = document.getElementById('canvas');
   var myLocation = new google.maps.LatLng(37.0902, -95.7129);
   var mapOptions = {
@@ -43,6 +42,9 @@ function initMap() {
     mapTypeControlOptions: {
       position: google.maps.ControlPosition.BOTTOM_CENTER
     }
+  };
+  var myMap = new google.maps.Map(el, mapOptions); 
+
     styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
       { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -122,8 +124,8 @@ function initMap() {
         elementType: "labels.text.stroke",
         stylers: [{ color: "#17263c" }],
       },
-    ],
-  });
+    ];
+  
 
   new google.maps.Marker({
     position: { lat: 39.5953, lng: -82.5331 },
@@ -478,8 +480,8 @@ function initMap() {
     map,
     title: "Durham",
   });
-
 }
+google.maps.event.addDomListener(window, 'load', init); 
 
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
@@ -488,5 +490,3 @@ function toggleBounce() {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
 }
-
-initMap();

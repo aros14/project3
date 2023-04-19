@@ -23,7 +23,7 @@
 #main-nav ul li {
   float: left;
   position: relative;
-  left: 50%;
+  right: 50%;
   display: block;
   font-family: "Leelawadee";
 }
@@ -298,19 +298,10 @@ font-family: "Merriweather";
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
  */
-#map {
+#canvas {
   height: 50%;
 }
 
-/* 
- * Optional: Makes the sample page fill the window. 
- */
-html,
-body {
-  height: 125%;
-  margin: 15px;
-  padding: 15px;
-}
 
 
 /* picture slider */
