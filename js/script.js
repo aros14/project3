@@ -177,6 +177,54 @@ async function initMap() {
     map,
     title: "Lake Street/Midtown station",
   });
+
+  new google.maps.Marker({
+    position: { lat: 41.4993, lng: -81.6944 },
+    map,
+    title: "Cleveland",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 25.4687, lng: -80.4776 },
+    map,
+    title: "Homestead",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 33.4484, lng: -112.0740 },
+    map,
+    title: "Phoenix",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 42.2711, lng: -89.0940 },
+    map,
+    title: "Rockford",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 29.9196, lng: -95.5771 },
+    map,
+    title: "Northern Houston",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 36.3490, lng: -119.4186 },
+    map,
+    title: "Goshen",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 27.4467, lng: -80.3256 },
+    map,
+    title: "Fort Pierce",
+  });
+
+  new google.maps.Marker({
+    position: { lat: 28.8029, lng: -81.2695 },
+    map,
+    title: "Sanford",
+  });
 }
 
 initMap();
