@@ -31,13 +31,18 @@ function showSlides(n) {
 // map
 let map;
 
-async function initMap() {
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
+function initMap() {
 
-  map = new Map(document.getElementById("map"), {
-    center: { lat: 37.0902, lng: -95.7129 },
+  //alert('it works');
+  var el = document.getElementById('canvas');
+  var myLocation = new google.maps.LatLng(37.0902, -95.7129);
+  var mapOptions = {
+    center: myLocation,
     zoom: 4.5,
+    mapTypeId: google.maps.MapTypeId.SATELLITE,
+    mapTypeControlOptions: {
+      position: google.maps.ControlPosition.BOTTOM_CENTER
+    }
     styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
       { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
