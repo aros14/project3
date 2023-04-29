@@ -294,12 +294,18 @@ font-family: "Merriweather";
   background-size: 100%;
 }
 
-/* 
- * Always set the map height explicitly to define the size of the div element
- * that contains the map. 
- */
+#wrapper {
+  width: 850px;
+  height: 600px;
+  background-color: #c00;
+  margin:0 auto;
+  overflow: hidden;
+  }
 #canvas {
-  height: 50%;
+  width: 700px; 
+  height: 500px;
+  background-color: #ccc;
+  margin: 30px auto;
 }
 
 
