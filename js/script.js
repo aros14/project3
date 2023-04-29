@@ -29,30 +29,18 @@ function showSlides(n) {
 }
 
 // map
+let map;
+let center = {lat: 37.0902, lng: -95.7129};
 
-function init(){
-	alert('it works');
-	var el = document.getElementById('canvas');
-	var myLocation = new google.maps.LatLng(41.835117, -87.627130);
-	var mapOptions = {
-		center: myLocation,
-		zoom: 18,
-		mapTypeId: google.maps.MapTypeId.SATELLITE,
-		mapTypeControlOptions: {
-			position: google.maps.ControlPosition.BOTTOM_CENTER
-		}
-	};
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: center,
+    zoom: 4.25,
+  });
 
-	var myMap = new google.maps.Map(el, mapOptions);
-
-	var marker = new google.maps.Marker({
-		position: myLocation,
-		map: myMap,
-		animation: google.maps.Animation.BOUNCE,
-	});
-
-
-
+  let marker = new google.maps.Marker({
+    position: { lat: 39.5953, lng: -82.5331 },
+    map,
+    title: "John Glenn Columbus International Airport",
+  });
 }
-
-google.maps.event.addDomListener(window, 'load', init);

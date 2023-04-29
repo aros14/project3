@@ -295,18 +295,22 @@ font-family: "Merriweather";
 }
 
 #wrapper {
-  width: 850px;
+  width: 1200px;
   height: 600px;
-  background-color: #c00;
+  background-color: black;
   margin:0 auto;
   overflow: hidden;
   }
 #canvas {
-  width: 700px; 
+  width: 1000px; 
   height: 500px;
   background-color: #ccc;
   margin: 30px auto;
-}
+  }
+#map {
+  height: 500px;
+  width: 100%;
+  }
 
 
 
@@ -401,4 +405,5 @@ font-family: "Merriweather";
 
 .map-text {
   color: white;
+  text-align: center;
 }
